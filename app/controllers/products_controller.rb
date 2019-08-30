@@ -51,7 +51,6 @@ class ProductsController < ApplicationController
 
   def update
     @product = Product.find(params[:id])
-    binding.pry
     # @images = @product.images
     if @product.update(product_params)
       # params[:images][:image].each do |image|
